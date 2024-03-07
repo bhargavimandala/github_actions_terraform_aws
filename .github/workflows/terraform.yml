@@ -1,0 +1,8 @@
+name: Terraform Setup
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+on:
+  push:
+    branches: [ "master"]
+jobs:
+  testing:
+    runs-on: ubuntu-latest    
