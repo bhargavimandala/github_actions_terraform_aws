@@ -6,3 +6,6 @@ on:
 jobs:
   testing:
     runs-on: ubuntu-latest    
+    steps:
+      - name: testing the code
+        run: echo "testing the code"
