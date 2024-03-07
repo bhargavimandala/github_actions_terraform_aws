@@ -3,6 +3,11 @@ run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 on:
   push:
     branches: [ "master"]
+  workflow_call:
+    inputs:
+      deploy_target:
+        required: true
+        type: string  
 jobs:
   testing:
     runs-on: ubuntu-latest    
